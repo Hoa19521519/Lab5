@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+    <ImageView
+        android:id="@+id/imgAnhMonAn"
+        android:src="@drawable/a"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/txvCapDo"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#A8A1A2"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="Cá Lóc Kho Nghệ"
+            android:textSize="10dp"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txvTenMonAn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:text="Ten Mon An"
+        android:textSize="14dp"
+        android:textColor="#000"/>
+</LinearLayout>

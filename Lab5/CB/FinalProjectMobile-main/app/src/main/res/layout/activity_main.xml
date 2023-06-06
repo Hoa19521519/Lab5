@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:largeHeap="true"
+    android:hardwareAccelerated="false"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#CBA04C"
+        android:gravity="center">
+<ImageView
+    android:layout_width="60dp"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:src="@drawable/update"
+    app:tint="#fff"
+    android:layout_alignParentRight="true"
+    android:onClick="update"
+    tools:ignore="OnClick" />
+
+        <EditText
+            android:id="@+id/edtTimKiem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_edt"
+            android:gravity="center"
+            android:hint="Search..."
+            android:textColor="#673AB7"
+            android:textColorHint="#050404"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/gdvDSMonAn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"></GridView>
+
+
+</LinearLayout>
